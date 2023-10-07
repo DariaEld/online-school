@@ -38,7 +38,7 @@ public class LessonServiceImpl implements LessonService {
 
     @Override
     public Lesson getNext(String teacherName) {
-        return null;
+        return lessonRepository.findNext(teacherName);
     }
 
     @Override

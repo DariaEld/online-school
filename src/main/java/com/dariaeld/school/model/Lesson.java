@@ -17,7 +17,7 @@ public class Lesson {
     @Column
     private LocalDateTime lessonTime;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "teacher_id", referencedColumnName = "id")
     private Teacher teacher;
 
